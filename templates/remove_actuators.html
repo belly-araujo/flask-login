@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <form action="http://localhost:8080/del_actuator" method="post">
+        <select name="atuador" class="Input">
+            {% for key, value in atuadores.items() %}
+            <option>{{ key }}</option>
+            {% endfor %}
+            <p><input type="submit" value="Deletar" /></p>
+        </select>
+    </form>
+</body>
+
+</html>

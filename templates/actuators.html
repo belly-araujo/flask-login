@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Atuadores</title>
+</head>
+<body>
+<h1>Atuadores</h1>
+<ul>
+    {% for key, value in atuadores.items() %}
+        <li>{{key}}:{{value}}</li>
+    {% if(value == 1) %}
+        <li>Atuador ligado</li>
+    {% elif(value == 0 ) %}
+        <li>Atuador desligado</li>
+    {% endif %}
+{% endfor %}
+
+</ul>
+<p>Voltar para <a href="/">página inicial</a>!</p>
+</body>
+</html>
